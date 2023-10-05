@@ -124,10 +124,27 @@ console.log(upperFirst("la vita è bella"));
  della stringa originale.
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(string) {
+  return string.slice(1, string.length - 1);
+}
+console.log(cutString("pizza"));
+
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+  const numbers = []
+  for (let i = 0; i < n; i++) {
+    numbers.push(Math.floor(Math.random() * 10));
+    
+  }
+return numbers
+} 
+console.log(giveMeRandom(7))
+
